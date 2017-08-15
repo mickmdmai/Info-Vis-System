@@ -1,0 +1,177 @@
+{
+	"extends": ["tslint:latest", "tslint-react"],
+	"rules": {
+		"ordered-imports": [
+			false
+		],
+		"quotemark": [
+			true,
+			"single",
+			"jsx-double"
+		],
+		"member-access": [
+			false
+		],
+		"no-trailing-whitespace": false,
+		"indent": [
+			true,
+			"tabs"
+		],
+		"eofline": true,
+		"arrow-parens": [
+			true,
+			"ban-single-arg-parens"
+		],
+		"no-string-literal": false,
+		"object-literal-sort-keys": false,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "never",
+				"singleline": "never"
+			}
+		],
+		"no-bitwise": false,
+		"max-line-length": [
+			false
+		],
+		"interface-name": [
+			false
+		],
+		"no-shadowed-variable": false,
+		"only-arrow-functions": [
+			false
+		],
+		"max-classes-per-file": [
+			false
+		],
+		"member-ordering": [
+			false
+		],
+		"array-type": [
+			true,
+			"array"
+		],
+		"forin": false,
+		"no-console": [
+			false
+		],
+		"object-literal-key-quotes": [
+			true,
+			"as-needed"
+		],
+		"no-unused-variable": [
+			true,
+			{
+				"ignore-pattern": "^React$"
+			}
+		],
+		"semicolon": [
+			true,
+			"never"
+		],
+		"space-before-function-paren": [
+			true, {
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"ban-types": [
+			true,
+			["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+			["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+			["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+			["String", "Avoid using the `String` type. Did you mean `string`?"],
+			["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+		],
+		"no-var-requires": false,
+		"jsx-no-lambda": false,
+		"jsx-alignment": false,
+		"jsx-no-multiline-js": false,
+		"jsx-boolean-value": false
+	},
+	"jsRules": {
+		"ordered-imports": [
+			false
+		],
+		"quotemark": [
+			true,
+			"single",
+			"jsx-double"
+		],
+		"member-access": [
+			false
+		],
+		"no-trailing-whitespace": false,
+		"indent": [
+			true,
+			"tabs"
+		],
+		"eofline": true,
+		"arrow-parens": [
+			true,
+			"ban-single-arg-parens"
+		],
+		"no-string-literal": false,
+		"object-literal-sort-keys": false,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "never",
+				"singleline": "never"
+			}
+		],
+		"no-bitwise": false,
+		"max-line-length": [
+			false
+		],
+		"interface-name": [
+			false
+		],
+		"no-shadowed-variable": false,
+		"only-arrow-functions": [
+			false
+		],
+		"max-classes-per-file": [
+			false
+		],
+		"member-ordering": [
+			false
+		],
+		"array-type": [
+			true,
+			"array"
+		],
+		"forin": false,
+		"no-console": [
+			false
+		],
+		"object-literal-key-quotes": [
+			true,
+			"as-needed"
+		],
+		"no-unused-variable": [
+			true,
+			{
+				"ignore-pattern": "^React$"
+			}
+		],
+		"semicolon": [
+			true,
+			"never"
+		],
+		"space-before-function-paren": [
+			true, {
+				"anonymous": "always",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"object-literal-shorthand": true,
+		"jsx-no-lambda": false,
+		"jsx-alignment": false,
+		"jsx-no-multiline-js": false,
+		"jsx-boolean-value": false
+	}
+}

@@ -1,0 +1,230 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+}
+
+.state {
+	stroke-width: 1px;
+	stroke: black;
+	cursor: pointer;
+}
+
+$blue500: #2196F3;
+$blue600: #1E88E5;
+$blue700: #1976D2;
+
+$red500: #F44336;
+$red600: #E53935;
+$red700: #D32F2F;
+
+$purple500: #9C27B0;
+$purple600: #8E24AA;
+$purple700: #7B1FA2;
+
+$primaryText: rgba(0, 0, 0, .87);
+$secondaryText: rgba(0, 0, 0, .54);
+$disabledText: rgba(0, 0, 0, .3);
+
+$primaryLightText: rgba(255, 255, 255, 1);
+$secondaryLightText: rgba(255, 255, 255, .7);
+$disabledLightText: rgba(255, 255, 255, .3);
+
+$depth1: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+$depth2: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+$depth3: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
+
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	margin: 8px;
+}
+
+button.blue {
+	background-color: $blue500;
+	
+	&:hover {
+		background-color: $blue600;
+	}
+	
+	&:active {
+		background-color: $blue700;
+	}
+}
+
+button.red {
+	background-color: $red500;
+	
+	&:hover {
+		background-color: $red600;
+	}
+	
+	&:active {
+		background-color: $red700;
+	}
+}
+
+button.purple {
+	background-color: $purple500;
+	
+	&:hover {
+		background-color: $purple600;
+	}
+	
+	&:active {
+		background-color: $purple700;
+	}
+}
+
+button {
+	margin: 8px;
+	min-height: 36px;
+	min-width: 88px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	background-color: $blue500;
+	color: $primaryLightText;
+	border: none;
+	font-size: 14px;
+	padding: 8px;
+	outline: none;
+	
+	cursor: pointer;
+	
+	box-shadow: $depth1;
+	
+	&:hover {
+		box-shadow: $depth2;
+		background-color: $blue600;
+	}
+	
+	&:active {
+		box-shadow: $depth3;
+		background-color: $blue700;
+	}
+	
+	&[disabled], &[disabled]:hover {
+		color: $disabledText;
+		box-shadow: none;
+		background-color: rgba(0, 0, 0, .12);
+		cursor: default;
+	}
+	
+	transition: all 0.1s ease-in;
+}
+
+.states {
+	stroke: black;
+}
+
+.label {
+	font-size: 12px;
+	pointer-events: none;
+}
+
+.county {
+	stroke: black;
+}
+
+.tooltip {
+	visibility: hidden;
+	pointer-events: none;
+	background: white;
+	color: black;
+	position: absolute;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+	border-radius: 2px;
+}
+
+.tooltip p, .tooltip h4 {
+	margin: 2px;
+}
+
+.legend {
+	float: left;
+}
+
+#mapview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 960px;
+	height: 540px;
+	order: 1;
+}
+
+#detailview label {
+	margin: 8px;
+}
+
+#detaillabel {
+	margin: 8px;
+}
+
+#detaillabel p, #detaillabel h4 {
+	text-align: center;
+}
+
+#detaillabel p {
+	margin: 2px;
+}
+
+.detailrect {
+	stroke: white;
+	stroke-width: 0.5px;
+}
+
+h4 {
+	margin: 4px;
+}
+
+#statview {
+	float: right;
+	order: 2;
+	padding: 16px;
+}
+
+#statview p {
+	margin: 2px;
+}
+
+#statview h4 {
+	text-align: center;
+}
+
+#statview table {
+	table-layout: fixed;
+}
+
+#statview td {
+	min-width: 100px;
+	max-width: 100px;
+}
+
+#statview div {
+	margin-bottom: 20px;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+}
+

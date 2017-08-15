@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"jsx": "react",
+		"module": "es2015",
+		"moduleResolution": "node"
+	},
+	"awesomeTypescriptLoaderOptions": {
+		"useBabel": true,
+		"useCache": true,
+		"transpileOnly": true,
+		"babelOptions": {
+			"presets": [
+				[
+					"es2015",
+					{
+						"modules": false 
+					}
+				]
+			]
+		}
+	}
+}
